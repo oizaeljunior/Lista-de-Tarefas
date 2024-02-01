@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-icone">
+            <img src="imagens/icone.png" alt="icone" id="imgIcone">
+            <h1>Minha Lista de Tarefas</h1>
+        </div>
+        <input type="text" id="new-task" placeholder="Adicione uma nova tarefa">
+        <button onclick="addTask()" id="adiciona">Adicionar Tarefa</button> 
+        <div class="selecao-filtro">
+            <select id="filtro" onchange="filtroTasks()">
+                <option value="all">Mostrar todas</option>
+                <option value="completed">Mostrar concluídas</option>
+                <option value="uncompleted">Mostrar não concluídas </option>
+            </select>
+        </div>       
+        
+
+        <ul id="task-list">
+            <!-- Tarefas serão adicionadas dinamicamente aqui -->
+        </ul>
+ 
+    </div>
+    <div class="contatos">
+        <p id="nome">Developed By Izael Junior</p>
+        <a href="https://www.linkedin.com/in/izael-junior-24a3aa259/" target="_blank"><img src="imagens/linkedin.png" alt="linkedin" id="linkedin"></a>
+        <a href="https://github.com/oizaeljunior" target="_blank"><img src="imagens/github.png" alt="github" id="github"></a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
